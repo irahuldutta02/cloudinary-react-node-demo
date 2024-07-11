@@ -19,7 +19,7 @@ export const WidgetReactSingleFileCrop = () => {
     <>
       <div className="flex justify-start items-center flex-col gap-4 w-full p-4">
         <h2 className="text-xl font-bold">
-          Upload Widget in React Single File
+          Upload Widget in React Single File with Cropping
         </h2>
       </div>
       <div className="flex justify-start items-center flex-col gap-4 w-full p-4">
