@@ -3,6 +3,7 @@ import { WidgetReactMultiFile } from "./pages/WidgetReactMultiFile";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { WidgetReactSingleFile } from "./pages/WidgetReactSingleFile";
+import { WidgetReactSingleFileCrop } from "./pages/WidgetReactSingleFileCrop";
 
 function App() {
   const [selectedType, setSelectedType] = useState("default");
@@ -28,6 +29,9 @@ function App() {
               <option value={"widget-react-multi-file"}>
                 Upload Widget in React Multi File
               </option>
+              <option value={"widget-react-single-file-crop"}>
+                Upload Widget in React Single File With Crop
+              </option>
             </select>
           </form>
         </div>
@@ -46,6 +50,11 @@ function App() {
         {selectedType === "widget-react-multi-file" && (
           <div className="flex justify-start items-center flex-col gap-4 w-full p-4">
             <WidgetReactMultiFile />
+          </div>
+        )}
+        {selectedType === "widget-react-single-file-crop" && (
+          <div className="flex justify-start items-center flex-col gap-4 w-full p-4">
+            <WidgetReactSingleFileCrop />
           </div>
         )}
       </div>
